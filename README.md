@@ -6,7 +6,7 @@ A short js that enables switching classes of HTML elements depending on window s
 First, include classtrigger.min.js.
 Then, initialize ClassTrigger.js by calling `tr.init()`
 ```html
-<script src="js/classtrigger.js"></script>
+<script src="js/classtrigger.min.js"></script>
 <script>
 tr.init();
 </script>
