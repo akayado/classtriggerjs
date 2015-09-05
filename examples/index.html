@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="../js/classtrigger.min.js"></script>
+		<script>
+			tr.init();
+		</script>
+		<style>
+			.class1 {
+				background: pink;
+			}
+			.class2 {
+				color: blue;
+			}
+			.class3 {
+				background: orange;
+			}
+		</style>
+	</head>
+	<body>
+		<p data-tr-large="class1">class1 will be applied to this element only when the window size is larger than 800px.</p>
+		<p data-tr-medium="class2">class2 will be applied to this element only when the window size is larger than 360px and smaller or equal to 800px.</p>
+		<p data-tr-small="class3">class3 will be applied to this element only when the window size is smaller or equal to 360px.</p>
+
+		<p data-tr-hover="class1">class1 will be applied to this element when the cursor hovers over this element.</p>
+		<p data-tr-click="class2">class2 will be applied to this element after it is clicked.</p>
+
+		<p data-tr-hover="class1 class2">Multiple classes can be applied at the same time!</p>
+		<p class="class3" data-tr-hover="-class3">A "-" before a class name will cancel the class.</p>
+		<p class="class1" data-tr-hover="-class1 class2">Of course, you can do this!</p>
+	</body>
+</html>
