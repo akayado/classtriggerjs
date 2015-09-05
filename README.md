@@ -65,12 +65,12 @@ Defaults are as follows.
 ```
 
 ## Available mouse action triggers
-*hover
-*click
-*dblclick
-*mouseenter
-*mouseleave
-*mouseover
-*mouseout
-*mousedown
-*mouseup
+* hover
+* click
+* dblclick
+* mouseenter
+* mouseleave
+* mouseover
+* mouseout
+* mousedown
+* mouseup
