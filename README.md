@@ -63,3 +63,14 @@ Defaults are as follows.
 	prefix: "tr"
 }
 ```
+
+## Available mouse action triggers
+*hover
+*click
+*dblclick
+*mouseenter
+*mouseleave
+*mouseover
+*mouseout
+*mousedown
+*mouseup
