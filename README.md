@@ -2,6 +2,7 @@
 A short js that enables switching classes of HTML elements depending on window size, mouse action with a single line of js!
 
 ## Basic Usage
+### Initialization
 First, include classtrigger.min.js.
 Then, initialize ClassTrigger.js by calling `tr.init()`
 ```html
@@ -11,7 +12,9 @@ tr.init();
 </script>
 ```
 Your header will include some stuff like this.
-Now, add `data-tr-*` attributes to element.
+Now you're ready to go.
+
+### Responsive stuff
 ```html
 <p data-tr-large="class1">class1 will be applied to this element only when the window size is larger than 800px.</p>
 <p data-tr-medium="class2">class2 will be applied to this element only when the window size is larger than 360px and smaller or equal to 800px.</p>
@@ -20,12 +23,14 @@ Now, add `data-tr-*` attributes to element.
 The example above demonstrates how to assign classes depending on window size.
 Of course, you can change or add breakpoints. See "Configurations."
 
+### Interactive stuff
 ```html
 <p data-tr-hover="class1">class1 will be applied to this element when the cursor hovers over this element.</p>
 <p data-tr-click="class2">class2 will be applied to this element after it is clicked.</p>
 ```
 The example above demonstrates how to assign classes depending on mouse events.
 
+### A little complicated stuff
 ```html
 <p data-tr-hover="class1 class2">Multiple classes can be applied at the same time!</p>
 <p class="class3" data-tr-hover="-class3">A "-" before a class name will cancel the class.</p>
@@ -45,6 +50,7 @@ configObj = {
 };
 tr.init(configObj);
 ```
+### Defaults
 Defaults are as follows.
 ```javascript
 {
