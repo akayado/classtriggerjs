@@ -175,4 +175,3 @@ window.tr = {}
   return
 )(tr)
 
-tr.init()

@@ -251,6 +251,4 @@ Released under the MIT license
     };
   })(tr);
 
-  tr.init();
-
 }).call(this);
