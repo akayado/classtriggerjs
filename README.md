@@ -27,6 +27,7 @@ Of course, you can change or add breakpoints. See "Configurations."
 ```html
 <p data-tr-hover="class1">class1 will be applied to this element when the cursor hovers over this element.</p>
 <p data-tr-click="class2">class2 will be applied to this element after it is clicked.</p>
+<p data-tr-press="class3">class3 will be applied to this element only while the mouse button is pressed.</p>
 ```
 The example above demonstrates how to assign classes depending on mouse events.
 
@@ -84,6 +85,7 @@ Defaults are as follows.
 
 ## Available mouse action triggers
 * hover
+* press
 * click
 * dblclick
 * mouseenter
