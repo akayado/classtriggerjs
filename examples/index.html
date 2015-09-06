@@ -28,5 +28,13 @@
 		<p data-tr-hover="class1 class2">Multiple classes can be applied at the same time!</p>
 		<p class="class3" data-tr-hover="-class3">A "-" before a class name will cancel the class.</p>
 		<p class="class1" data-tr-hover="-class1 class2">Of course, you can do this!</p>
+
+		<p data-tr-hover="{'#test':'class1'}">Hover over me!</p>
+		<p id="test">#test</p>
+		<p data-tr-hover="class1|{'#test2':'class2'}">Hover over me!</p>
+		<p id="test2">#test2</p>
+		<p data-tr-hover="{'#test3':'class1', '#test4':'class2'}">Hover over me!</p>
+		<p id="test3">#test3</p>
+		<p id="test4">#test4</p>
 	</body>
 </html>

@@ -38,6 +38,24 @@ The example above demonstrates how to assign classes depending on mouse events.
 ```
 As shown above, you can combine and/or cancel classes.
 
+###Indirectly changing classes
+```html
+<p data-tr-hover="{'#test':'class1'}">Hover over me!</p>
+<p id="test">#test</p>
+```
+You can use CSS selectors to choose the element whose class changes.
+Separate direct and indirect arguments with a "|" like this:
+```html
+<p data-tr-hover="class1|{'#test2':'class2'}">Hover over me!</p>
+<p id="test2">#test2</p>
+```
+Of course, you can use multiple indirect arguments like this:
+```html
+<p data-tr-hover="{'#test3':'class1', '#test4':'class2'}">Hover over me!</p>
+<p id="test3">#test3</p>
+<p id="test4">#test4</p>
+```
+
 ## Configurations
 You can easily configure breakpoints and prefixes of data- attributes at init phase like this.
 ```javascript
